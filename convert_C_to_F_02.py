@@ -1,8 +1,8 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Taylor Sperduti
+# DATE: 10/7/25
+# BRIEF DESCRIPTION: This will ask for a temperature and convert it  
 
 
 
@@ -15,6 +15,32 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+def main():
+    temp_convert()
+
+def temp_convert():
+
+ print("===== Temperature Converter =====")
+ print()
+ print("  1. Convert from Celsius to Fahrenheit")
+ print("  2. Convert from Fahrenheit to Celsius")
+ print()
+ menu = int(input("Please choose from the above menu: "))
+
+
+ if menu == 1:
+    celsius = float(input('Enter a temperature to convert: '))
+    print()
+    fahrenheit = celsius * 9/5 + 32
+    print(f"{celsius} degrees Celsius is {fahrenheit} degrees Fahrenheit.")
+
+ else:
+    fahrenheit = float(input('Enter a temperature to convert: '))
+    print()
+    celsius = (fahrenheit - 32) * 5/9
+    print(f"{fahrenheit} degrees Fahrenheit is {celsius} degrees Celsius.")
+ 
+main()
 
 
 
@@ -93,7 +119,7 @@ Enter a temperature to convert: -40
 
 1. What is one lesson you learned in this lab?
 
-
+To take a break when i get stuck
 
 
 
